@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Partagez votre avis sur Mama Pizza Martigues et aidez-nous à améliorer votre expérience.">
+    <title>Votre avis compte | Mama Pizza Martigues</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="review-card" aria-labelledby="page-title">
+        <div class="brand-pill" aria-label="Mama Pizza Martigues">
+          <span class="brand-dot" aria-hidden="true"></span>
+          Mama Pizza Martigues
+        </div>
+
+        <header class="hero">
+          <p class="eyebrow">Un instant pour nous aider</p>
+          <h1 id="page-title">Votre avis compte</h1>
+          <p class="intro">Votre expérience chez Mama Pizza Martigues est précieuse. Sélectionnez une note pour nous dire comment s’est passée votre visite.</p>
+        </header>
+
+        <form class="rating-form" aria-labelledby="rating-title">
+          <fieldset class="rating-fieldset">
+            <legend id="rating-title">Quelle note souhaitez-vous nous donner&nbsp;?</legend>
+            <p id="rating-help" class="rating-help">Choisissez de 1 à 5 étoiles. Les notes de 4 ou 5 étoiles ouvrent la page Google de Mama Pizza Martigues.</p>
+
+            <div class="star-rating" role="radiogroup" aria-describedby="rating-help">
+              <button type="button" class="star-button" data-rating="1" role="radio" aria-checked="false" aria-label="1 étoile sur 5">★</button>
+              <button type="button" class="star-button" data-rating="2" role="radio" aria-checked="false" aria-label="2 étoiles sur 5">★</button>
+              <button type="button" class="star-button" data-rating="3" role="radio" aria-checked="false" aria-label="3 étoiles sur 5">★</button>
+              <button type="button" class="star-button" data-rating="4" role="radio" aria-checked="false" aria-label="4 étoiles sur 5">★</button>
+              <button type="button" class="star-button" data-rating="5" role="radio" aria-checked="false" aria-label="5 étoiles sur 5">★</button>
+            </div>
+
+            <p class="rating-status" aria-live="polite">Aucune note sélectionnée.</p>
+          </fieldset>
+        </form>
+
+        <section class="redirect-message" hidden aria-live="polite">
+          Merci beaucoup pour votre note&nbsp;! Vous allez être redirigé vers Google pour partager votre avis public.
+        </section>
+
+        <section class="feedback-panel" hidden aria-labelledby="feedback-title">
+          <div class="panel-heading">
+            <p class="eyebrow">Nous sommes à votre écoute</p>
+            <h2 id="feedback-title">Dites-nous ce que nous pouvons améliorer</h2>
+            <p>Votre retour reste sur cette page dans cette version statique. Aucun envoi vers un serveur n’est effectué.</p>
+          </div>
+
+          <form id="feedback-form" class="feedback-form" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="customer-name">Prénom ou nom</label>
+                <input id="customer-name" name="customer-name" type="text" autocomplete="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="customer-contact">Téléphone ou email</label>
+                <input id="customer-contact" name="customer-contact" type="text" autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="customer-comment">Commentaire ou raison de votre insatisfaction</label>
+              <textarea id="customer-comment" name="customer-comment" rows="5" required></textarea>
+            </div>
+
+            <button class="submit-button" type="submit">Envoyer mon retour</button>
+          </form>
+
+          <p class="confirmation-message" hidden aria-live="polite">Merci, votre retour a bien été pris en compte. L’équipe Mama Pizza reviendra vers vous si nécessaire.</p>
+        </section>
+
+        <footer class="reassurance">
+          <strong>Merci de nous aider à améliorer votre expérience chez Mama Pizza Martigues.</strong>
+          <span>Chaque avis nous aide à mieux vous accueillir autour de nos pizzas.</span>
+        </footer>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
